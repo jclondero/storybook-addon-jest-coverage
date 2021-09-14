@@ -1,7 +1,7 @@
 import { addons, types } from "@storybook/addons";
 
 import { ADDON_ID, PANEL_ID } from "../constants";
-import { Tab } from "../Tab";
+import { Tab } from "../components/Tab";
 
 // Register the addon
 addons.register(ADDON_ID, () => {

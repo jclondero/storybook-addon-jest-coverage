@@ -1,15 +1,43 @@
 import React from "react";
+
 import { Button } from "./Button";
+
+const coverage = {
+  options: {
+    minimum: 70,
+    recommended: 85,
+  },
+  lines: {
+    total: 2,
+    covered: 2,
+    skipped: 0,
+    pct: 100,
+  },
+  functions: {
+    total: 1,
+    covered: 1,
+    skipped: 0,
+    pct: 50,
+  },
+  statements: {
+    total: 2,
+    covered: 2,
+    skipped: 0,
+    pct: 100,
+  },
+  branches: {
+    total: 0,
+    covered: 0,
+    skipped: 0,
+    pct: 100,
+  },
+};
 
 export default {
   title: "Example/Button",
   component: Button,
   parameters: {
-    myAddonParameter: `
-<MyComponent boolProp scalarProp={1} complexProp={{ foo: 1, bar: '2' }}>
-  <SomeOtherComponent funcProp={(a) => a.id} />
-</MyComponent>
-`,
+    coverage,
   },
 };
 
